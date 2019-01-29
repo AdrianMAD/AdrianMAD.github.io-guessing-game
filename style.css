@@ -1,0 +1,10 @@
+body{
+	text-align: center;
+	background: linear-gradient(to right, rgb(204, 107, 173), rgb(181, 189, 255));
+	height: 50%;
+	padding-top: 15%
+}
+
+h1, p, label, input {
+	font-family: 'Roboto', sans-serif;
+}
