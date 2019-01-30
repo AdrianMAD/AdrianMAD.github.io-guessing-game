@@ -6,6 +6,11 @@ const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
+let checkGuess = function enter(){
+  if (key === 13) {
+    checkGuess()
+  }
+}
 function checkGuess() {
 let userGuess = Number(guessField.value);
 if (guessCount === 1) {
@@ -35,6 +40,7 @@ guessField.value = '';
 guessField.focus();
 }
 guessSubmit.addEventListener('click', checkGuess);
+guessSubmit.addEventListener('keypress', enter);
 function setGameOver() {
 guessField.disabled = true;
 guessSubmit.disabled = true;
